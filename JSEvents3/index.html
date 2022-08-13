@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <a href="" class="navbar-brand">Bootstrap with Events</a>
+    </nav>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <button class="btn btn-success" onmouseover="mouseOverEx()" id="one">Mouse Over</button>
+            </div>
+            <div class="col-md-4">
+                <button class="btn btn-success">Mouse Over</button>
+            </div>
+            <div class="col-md-4">
+                <button class="btn btn-success">Mouse Over</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function mouseOverEx() {
+            /* alert("Test Case") */
+            document.getElementById('one').style.backgroundColor = "red"
+        }
+    </script>
+</body>
+
+</html>
